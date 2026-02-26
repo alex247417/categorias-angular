@@ -1,59 +1,49 @@
-# Categorias
+# 📦 Sistema de Gestão de Categorias - Angular CRUD
 
-This project was generated using [Angular CLI](https://github.com/angular/angular-cli) version 21.1.5.
+![Angular](https://img.shields.io/badge/angular-%23DD0031.svg?style=for-the-badge&logo=angular&logoColor=white)
+![Material UI](https://img.shields.io/badge/Material--UI-0081CB?style=for-the-badge&logo=material-ui&logoColor=white)
+![.Net](https://img.shields.io/badge/.NET-512BD4?style=for-the-badge&logo=dotnet&logoColor=white)
+![Windows 11](https://img.shields.io/badge/Windows%2011-0078D4?style=for-the-badge&logo=windows-11&logoColor=white)
 
-## Development server
+Este é um projeto de **Gestão de Categorias** (Catálogo) desenvolvido para fins de portfólio, integrando um frontend moderno em Angular com uma API robusta em .NET. O foco principal foi a implementação de um fluxo de trabalho completo de CRUD (Create, Read, Update, Delete) com uma interface limpa e responsiva.
 
-To start a local development server, run:
+## 🚀 Funcionalidades
 
-```bash
+- **Dashboard Administrativo:** Visualização rápida dos itens.
+- **CRUD Completo:** Criação, edição, visualização e eliminação de categorias.
+- **Autenticação:** Sistema de Login e Logout com proteção de rotas (AuthGuard).
+- **Interface Angular Material:** Uso de componentes como tabelas, botões e campos de input estilizados.
+- **Integração API:** Consumo de serviços RESTful através do `HttpClient`.
+
+## 🛠️ Tecnologias e Ferramentas
+
+- **Frontend:** [Angular](https://angular.io/) (com TypeScript)
+- **UI Framework:** [Angular Material](https://material.angular.io/)
+- **Linguagem:** TypeScript / SCSS
+- **Versionamento:** Git & GitHub
+- **SO de Desenvolvimento:** Windows 11 (24H2)
+
+## 📁 Estrutura do Projeto (Principais Componentes)
+
+- `categorias/`: Listagem principal das categorias.
+- `categoria-nova/`: Formulário para adição de novos registos.
+- `categoria-editar/`: Interface para modificação de dados existentes.
+- `login/` & `logout/`: Gestão de sessão do utilizador.
+- `services/api.service.ts`: Camada de comunicação com o backend .NET.
+
+## 🔧 Como Executar Localmente
+
+1. **Clonar o Repositório:**
+   ```powershell
+   git clone [https://github.com/alex247417/categorias-angular.git](https://github.com/alex247417/categorias-angular.git)
+Instalar Dependências:
+
+PowerShell
+npm install
+Executar a Aplicação:
+
+PowerShell
 ng serve
-```
+Aceda a http://localhost:4200 no seu browser.
 
-Once the server is running, open your browser and navigate to `http://localhost:4200/`. The application will automatically reload whenever you modify any of the source files.
-
-## Code scaffolding
-
-Angular CLI includes powerful code scaffolding tools. To generate a new component, run:
-
-```bash
-ng generate component component-name
-```
-
-For a complete list of available schematics (such as `components`, `directives`, or `pipes`), run:
-
-```bash
-ng generate --help
-```
-
-## Building
-
-To build the project run:
-
-```bash
-ng build
-```
-
-This will compile your project and store the build artifacts in the `dist/` directory. By default, the production build optimizes your application for performance and speed.
-
-## Running unit tests
-
-To execute unit tests with the [Vitest](https://vitest.dev/) test runner, use the following command:
-
-```bash
-ng test
-```
-
-## Running end-to-end tests
-
-For end-to-end (e2e) testing, run:
-
-```bash
-ng e2e
-```
-
-Angular CLI does not come with an end-to-end testing framework by default. You can choose one that suits your needs.
-
-## Additional Resources
-
-For more information on using the Angular CLI, including detailed command references, visit the [Angular CLI Overview and Command Reference](https://angular.dev/tools/cli) page.
+Desenvolvido por Alecsandro
