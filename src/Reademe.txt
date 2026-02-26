@@ -46,16 +46,4 @@ PowerShell
 ng serve
 Aceda a http://localhost:4200 no seu browser.
 
-Desenvolvido por Alex 🚀
-
-
-### Como guardar e subir este README:
-
-1.  Abra o seu ficheiro `README.md` no VS Code.
-2.  Substitua todo o conteúdo pelo texto acima.
-3.  No seu PowerShell, execute os comandos de push:
-
-```powershell
-git add README.md
-git commit -m "docs: adicionar readme profissional com badges"
-git push
+Desenvolvido por Alecsandro 
