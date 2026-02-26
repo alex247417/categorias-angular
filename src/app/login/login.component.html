@@ -1,0 +1,34 @@
+<div>
+  <h3>Login</h3>
+</div>
+
+<form [formGroup]="loginForm"
+      (ngSubmit)="addLogin()">
+
+  <mat-form-field appearance="fill">
+    <input matInput
+           type="text"
+           placeholder="Usuário"
+           formControlName="username">
+  </mat-form-field>
+
+  <br>
+
+  <mat-form-field appearance="fill">
+    <input matInput
+           type="password"
+           placeholder="Senha"
+           formControlName="password">
+  </mat-form-field>
+
+  <br><br>
+
+  <button type="submit"
+          mat-raised-button
+          color="primary"
+          [disabled]="loginForm.invalid">
+    Entrar
+  </button>
+  <p *ngIf="errorMessage" style="color: red;">{{ errorMessage }}</p>
+
+</form>
